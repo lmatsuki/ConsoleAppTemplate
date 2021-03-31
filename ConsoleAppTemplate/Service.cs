@@ -22,7 +22,7 @@ namespace ConsoleAppTemplate
 
         public async Task StartAsync(CancellationToken cancellationToken)
         {
-            await Process(cancellationToken).ConfigureAwait(false);
+            await Process(cancellationToken);
 
             // Manually stop the application
             _hostApplicationLifetime.StopApplication();
